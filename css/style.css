@@ -69,3 +69,11 @@ main {
 main > .fit-div > div {
     height: fit-content !important;
 }
+
+#main {
+    padding-top: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
