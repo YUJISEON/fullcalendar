@@ -1,0 +1,24 @@
+<ul id="navbar"  class="depth1"> 
+    <li class="dropdown">
+        <a href="/basic/index.html" class="active">01.basic</a>
+        <!--
+        <ul class="depth2">
+            <li><a href="/control/motionpath/index.html">1-1.motionPath</a></li>
+            <li><a href="/control/practice/index.html">1-2.practice</a></li>
+        </ul>
+        -->
+    </li>
+</ul>
+
+<script>
+    $(function(){
+        $('.depth1 > li').on({
+            mouseenter : function(){            
+                $(this).find('.depth2').stop().slideDown(400);;
+            },
+            mouseleave : function(){
+                $(this).find('.depth2').stop().slideUp(400);
+            }
+        });
+    })
+</script>

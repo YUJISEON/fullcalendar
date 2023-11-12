@@ -1,0 +1,71 @@
+
+
+#navbarWrap,
+#navbar {
+    width: 100%;
+    background: black;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+#navbar > li {
+    float: left;
+    width: 20%;
+    position: relative;
+}
+
+#navbar > li.right {
+    float: right;
+}
+
+#navbar >  li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+#navbar >  li a.active {
+    background: green;
+}
+
+#navbar >  li a:hover:not(#navbar li a.active) {
+    background: #111;
+}
+
+#navbar >  li ul.depth2 {
+    display: none;
+    box-sizing:border-box; 
+    width:100%;  
+    z-index: 1500;
+    background: rgba(0, 128, 0, 0.8);
+    position: absolute;
+    left: 0;
+    top: 52px;
+}
+
+#navbar >  li > ul.depth2 li a {
+    display:block; 
+    width:100%; 
+    line-height:30px;
+    text-align: left; 
+    font-size:1.4rem; 
+    font-weight:500; 
+    letter-spacing:0;
+    box-sizing: border-box;
+}
+
+main { 
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(100vh - 60px);
+}
+
+
+main > .fit-div > div {
+    height: fit-content !important;
+}
